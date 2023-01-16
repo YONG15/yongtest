@@ -7,8 +7,8 @@ int main()
 	int a, b, arr[6][3], n=10;
 	cin >> a >> b;
 	
-	for (int i = 0; i < 6; i++) {
-		for (int j = 0; j < 3; j++) {
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 6; j++) {
 			arr[j][i] = n;
 			n++;
 			if (i >= a && i <= b) {
