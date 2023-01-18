@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>이벤트</h1>
+  <!-- <button onclick="showMessage()">나를 클릭해(인라인방식)</button> -->
+  <!--인라인방식, 잘 안씀 -->
+
+  <button>나를 클릭해</button>
+  <div>나를 클릭해</div> 
+  <script>
+    function showMessage(){
+      console.log("안녕!!");
+    }
+    function showMessage2(){
+      console.log("즐겁다!");
+    }
+    const btn = document.querySelector("button");
+    btn.addEventListener("click", showMessage);
+    btn.addEventListener("click", showMessage2);
+    btn.addEventListener("click", function (){
+      console.log("즐겁다!");
+    });//이렇게 많이 쓰기도 하는데 함수를 2번이상 안쓰는경우(일회용)
+
+    // addEventListener가 인라인방식보다 좋은 이유는 콜백을 여러개 넣을수 있다.
+    // addEventListener메서드의 첫번째 파라미터는 이벤트의 종류를 의미함, 두번째 파라미터는 함수인데 괄호가 없는 이유는 예약함수(콜백)이기 때문에)
+    const div = document.querySelector("div");
+    div.addEventListener("click", showMessage);
+    div.addEventListener("click", showMessage2);
+  
+  </script>
+</body>
+</html>

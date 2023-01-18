@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <h1>A heading</h1>
+  <a class="mac" href="https://www.mcdonald.co.kr">Link text</a>
+  <script>
+    const a = document.children[0].children[1].children[0].textContent;
+    console.log(a);
+    a.textContent = "Abcd";
+    //개발을 할때 children[0].~~~보다 QuerySelector를 활용
+
+    //querySelector("선택자") class. id #
+    const h1Tag = document.querySelector("h1")
+    console.log(h1Tag);
+    const mac = document.querySelector(".mac")
+    console.log(mac);
+    console.log(mac.textContent);
+    mac.textContent = "맥도날드";
+    mac.href = "https://www.naver.com";
+  </script>
+</body>
+</html>
