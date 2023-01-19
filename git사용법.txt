@@ -1,0 +1,39 @@
+먼저, 코드를 작성해둔 프로젝트 디렉토리로 이동한 다음
+$ git init
+$ git config --global user.name "내 이름"
+$ git config --global user.email "내 이메일"
+
+그리고 모든 걸 담아보자.
+
+$ git add -A
+$ git status
+
+현재 무엇이 담겼는지 보일 것.
+
+이제 커밋해보자.
+
+$ git commit -m "커밋내용..예를들면 210817"
+
+이러면 작업내용이 저장되는것. 
+
+지금까지의 커밋내용을 출력하고싶다면
+
+$ git log
+
+이 경우, vi가 실행됨 (맨 밑에 END 보일 것). 빠져나오려면 :q
+
+이제 github 사이트 들어가서 레포지토리 만들고
+
+$ git remote add origin https://github.com~~~
+
+이렇게 해서 연결시킴
+
+잘 되었는지 확인하려면
+
+$ git remote
+
+이렇게 할 경우 origin 출력될거임
+
+이제 푸시해보자.
+
+$ git push -u origin master
