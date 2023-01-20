@@ -11,18 +11,104 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <style>
+      .test1 {
+        border: 10px solid black;
+      }
+    </style>
   </head>
   <body>
-    <h1>굿모닝</h1>
-    <button type="button" class="btn btn-outline-primary btn-lg">Primary</button>
-    <button type="button" class="btn btn-outline-success btn-sm">Success</button>
+    
     <div class="form-floating mb-3">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <input
+        type="email"
+        class="form-control"
+        id="floatingInput"
+        placeholder="name@example.com"
+      />
       <label for="floatingInput">이메일을 입력하세요</label>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <input
+        type="password"
+        class="form-control"
+        id="floatingPassword"
+        placeholder="Password"
+      />
       <label for="floatingPassword">비밀번호를 입력하세요</label>
+    </div>
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#signupmodal"
+    >
+      회원가입
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal"
+      id="signupmodal"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title">회원가입</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">@</span>
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <span class="input-group-text" id="basic-addon2">@example.com</span>
+            </div>
+            
+            <label for="basic-url" class="form-label">Your vanity URL</label>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+              <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+            </div>
+            
+            <div class="input-group mb-3">
+              <span class="input-group-text">$</span>
+              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+              <span class="input-group-text">.00</span>
+            </div>
+            
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+              <span class="input-group-text">@</span>
+              <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+            </div>
+            
+            <div class="input-group">
+              <span class="input-group-text">With textarea</span>
+              <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              취소
+            </button>
+            <button type="button" class="btn btn-primary">가입하기</button>
+          </div>
+        </div>
+      </div>
+      
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
