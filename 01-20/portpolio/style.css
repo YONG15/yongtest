@@ -1,0 +1,7 @@
+.carousel-item > img{
+  /* vw,vh:브라우저 크기에 대응하여 크기조절 */
+  height: 100vh;
+}
+nav{
+  z-index: 10;;
+}

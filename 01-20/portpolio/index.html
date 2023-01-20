@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>용효창의 포트폴리오</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="px-5 navbar navbar-expand navbar-dark bg-dark position-fixed w-100"
+      >
+        <!-- <div class="container-fluid"> -->
+        <a class="navbar-brand" href="#">용효창</a>
+        <!-- <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+        <!-- <div class="collapse navbar-collapse" id="navbarNav"> -->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#main-part"
+              >Main</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-part">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#language-part">Skill</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#stack-part">Stack</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#to-be-part">Closing</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li> -->
+        </ul>
+        <!-- </div> -->
+        <!-- </div> -->
+      </nav>
+    </header>
+    <section id="main-part">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/main1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption h-50">
+              <h2>저는 싸피 임베디드반 개발자 용효창 입니다.</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/main2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption h-50">
+              <h2>저는 배우는것을 좋아합니다<br />그리고 개발을 사랑합니다</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/main3.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption h-50">
+              <h2>저는 임베디드개발자가 되고싶습니다.</h2>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section id="about-part" class="pt-5">
+      <div class="h1 bg-primary p-4 text-white text-center w-100">About</div>
+      <div class="card mx-auto mt-4" style="width: 18rem">
+        <img
+          src="./images/profile.jpg"
+          class="card-img-top w-75 m-auto"
+          alt="..."
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title h3">용효창</h5>
+          <p class="card-text">Iit Developer<br />(Web + Embedded)</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="mt-5 text-center">
+        안녕하세요. 언제나 달려가는 개발자 용효창입니다.
+        <br />
+        저는 강한 열의를 가지고 있습니다.
+      </div>
+      <ul class="list-group w-50 mx-auto list-group-flush">
+        <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+        </svg>
+        <span class="ms-2">010-xxxx-xxxx</span>
+      </li>
+        <li class="list-group-item"><span class="ms-2">A second item</span></li>
+        <li class="list-group-item"><span class="ms-2">A third item</span></li>
+        <li class="list-group-item"><span class="ms-2">A fourth item</span></li>
+        <li class="list-group-item">
+          <span class="ms-2">And a fifth one</span>
+        </li>
+      </ul>
+    </section>
+    <section id="language-part">
+      <div class="h1 bg-primary p-4 text-white text-center w-100">Skill</div>
+    </section>
+    <section id="stack-part">
+      <div class="h1 bg-primary p-4 text-white text-center w-100">Stack</div>
+    </section>
+    <section id="to-be-part">
+      <div class="h1 bg-primary p-4 text-white text-center w-100">Closing</div>
+    </section>
+
+    <footer></footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
