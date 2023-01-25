@@ -1,0 +1,25 @@
+이미지넣는법:백그라운드이미지,이미지태그,절대경로,상대경로
+html태그종류:h1, ul, ol, li, a, p, input(중요), 각각의 역할과 attribute종류
+css적용법:인라인방식(추천안함), head에서 style태그넣기, css파일 link로 가져오기(추천)
+js적용법:body가 끝나기 전에 script태그
+선택자 종류: 태그이름(그냥),클래스명(.),id명(#)(하나씩만)
+글자색깔:color, 배경색깔:backgrouncolor
+정렬:textalign,justy~,flex,margin 0 auto,
+원만들기: border radis
+디스플레이 프로퍼티:인라인(크기변경안됨), 블록(영역전체), none(안보임), 
+position:옮길때 씀,렐러티브(부모를 기준으로 위치잡음),앱솔루트(스태틱이 아닌 부모를 기준으로 위치잡음),fixed(고정)
+flex:정렬할때씀
+z-index:겹칠때 뭐가 앞으로 나올지
+자바랑 자바스크립트는 상관 x,자바스크립트랑 j쿼리는 상관 o
+js의 타입들
+var,let,const차이
+==,=== 차이
+객체:어떻게 접근하는지 사용하는지
+dom가져오기:.document
+쿼리셀렉터:사용법
+add이벤트리스너:사용법
+textcontent는 태그안의 텍스트 가져오는것,value는 인풋값
+createeliment:사용법
+classlist:목적,사용법
+bootstrap:cdm으로 깔아야함
+cdm:가까운 서버이용하기위함

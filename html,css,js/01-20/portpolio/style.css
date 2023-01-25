@@ -1,0 +1,22 @@
+.carousel-item > img {
+  /* vw,vh:브라우저 크기에 대응하여 크기조절 */
+  height: 100vh;
+}
+nav {
+  z-index: 10;
+}
+.sort-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  border-top: 1px solid #dddddd;
+}
+.skill-list {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  height: 70vh;
+}
