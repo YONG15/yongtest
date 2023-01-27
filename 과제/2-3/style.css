@@ -1,0 +1,16 @@
+.board{
+  border: 3px solid black;
+  width: 800px;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wbox{
+  width: 100px;
+  height: 100px;
+}
+.bbox{
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
