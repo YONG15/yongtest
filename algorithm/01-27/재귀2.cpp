@@ -94,30 +94,23 @@
 #define _CRT_SECURE_NO_WARNINGS
 using namespace std;
 
-char arr[5] = { 'A','G','K','R','P' };
-char path[10];
-int used[10];
-void run(int lev) {
-	if (lev == 4) {
-		cout << path << endl;
+int path[2];
+void run(int lev, int start) {
+	if (lev == 2) {
+		cout << path[0] << path[1] << endl;
 		return;
 	}
-	for (int i = 0; i < 5; i++) {
-		if (used[i] == 1) {
-			continue;
-		}
-		path[lev] = arr[i];
-		used[i] = 1;
-		run(1 + lev);
-		used[i] = 0;
-		path[lev] = 0;
+
+	for (int i = start; i <= 6; i++) {
+		path[lev] = i;
+		run(lev + 1, i);
+
 	}
 }
 
-
 int main()
 {
-	run(0);
+	run(0, 1);
 
 	return 0;
 }
