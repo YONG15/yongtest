@@ -1,0 +1,26 @@
+js는 웹을 동적으로 만든다
+js를 동작시키기위해 브라우저가 필요
+브라우저를 벗어나서 js를 쓰기위해 node.js
+Node.js,브라우저 => 실행기(runtime)
+ECMA script : js규약
+=== vs ==
+var, let, const 호이스팅 =>세개 전부 발생 대신 let과const는 접근이 불가능
+함수표현식 : const sampleFunc = function () {} >>>>>함수 호이스팅이 아닌 변수 호이스팅이 발생한다
+const arr = [1,2,3]; arr[2] = 1; >>>>가능, arr = [2,4,6]>>>불가능
+dom접근할때 document.쿼리셀렉터
+
+const btn = document.querySelector("button")
+btn.addEventListner("click", (()=>console.log("hi")))
+또는 
+<button onclick="sayHi()"> 
+const sayHi = () => console.log("hi")
+
+classlist.~ 4가지
+콜백함수 : 함수안에 들어가는 함수
+slice, splice
+forEach, map, filter, reduce >>>>원본데이터를 건드리지 않는다.
+indexOf,concat,push,split...
+버블링,캡쳐,위임
+HTTP Request Method : GET, POST, PUT, PATCH, DELETE
+min.js쓰는이유
+JSON : 클라이언트와 서버간의 데이터 통신 표준
