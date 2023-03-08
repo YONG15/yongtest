@@ -6,7 +6,7 @@ const pool = mysql.createPool({
     // mysql username
     user: "ssafy",
     // mysql user password
-    password: "*ssafy09",
+    password: "",
     // db name
     database: "order_system",
     waitForConnections: true,
